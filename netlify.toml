@@ -2,7 +2,4 @@
 from = "/*"
 to = "/homepage.html"
 status = 200
-[build]
-command = "npm run build"
-publish = "/build"
-base = "/"
+
