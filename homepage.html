@@ -1,0 +1,502 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Danish's Portfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://getcssscan.com/css-buttons-examples" rel="stylesheet" />
+    <style>
+      body {
+        font-family: arial;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #f5f5f5;
+      }
+      * {
+        scroll-behavior: smooth;
+      }
+      header {
+        background: black;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+      }
+      header a {
+        color: white;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .logo {
+        float: left;
+        font-size: 24px;
+        font-weight: bold;
+        color: #6c63ff;
+      }
+      nav {
+        float: right;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .btn {
+        background: #6c63ff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .hero {
+        text-align: center;
+        padding: 100px 0;
+        background: url("./background.jpg");
+        background-size: cover;
+      }
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .hero p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 40px;
+      }
+      .hero img {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .stats {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+      }
+      .stats div {
+        background: #fff;
+        padding: 20px;
+        margin: 0 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .stats div h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .stats div p {
+        color: #666;
+      }
+      .work-process,
+      .portfolio,
+      .blog,
+      .contact,
+      .footer {
+        padding: 50px 0;
+        background: #fff;
+        margin-bottom: 50px;
+      }
+      .work-process h2,
+      .portfolio h2,
+      .blog h2,
+      .contact h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .work-process .steps,
+      .portfolio .projects,
+      .blog .posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .work-process .step,
+      .portfolio .project,
+      .blog .post {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .work-process .step img,
+      .portfolio .project img,
+      .blog .post img {
+        border-radius: 10px;
+      }
+      .work-process .step h3,
+      .portfolio .project h3,
+      .blog .post h3 {
+        font-size: 20px;
+        margin: 20px 0 10px;
+      }
+      .work-process .step p,
+      .portfolio .project p,
+      .blog .post p {
+        color: #666;
+      }
+      .cta {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 50px 0;
+      }
+      .cta h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      .cta a {
+        background: #6c63ff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      .footer p {
+        margin: 0;
+      }
+      .footer a {
+        color: #6c63ff;
+        text-decoration: none;
+      }
+      .social-icons a i {
+        font-size: 42px;
+        color: black;
+      }
+      .social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        margin: 90px 0;
+      }
+      .flex1 {
+        flex: 1 1 0%;
+      }
+      .linkeu {
+        background-color: rgba(88, 83, 83, 0.2);
+        border-radius: 8px;
+        border-width: 0;
+        color: #333333;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Arial";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 10px 12px;
+        text-align: center;
+        transition: all 200ms;
+        vertical-align: baseline;
+        white-space: nowrap;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"></div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#hero"> Home </a>
+            </li>
+            <li>
+              <a href="#portfolio"> Portfolio </a>
+            </li>
+            <li>
+              <a href="mailto:paoonish@gmail.com target=" _blank> Contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1>Hello, I'm Danish</h1>
+        <p>
+          <b
+            >As a Video Editor and Assistant Producer, I am passionate about
+            transforming ideas into compelling visual stories. With a strong eye
+            for detail and a creative approach, I enjoy bringing scripts to
+            life, ensuring that every frame and sound is perfectly aligned to
+            deliver an impactful message.
+          </b>
+        </p>
+        <img
+          alt="Portrait of Me"
+          height="400"
+          src="Danish from Line.jpg"
+          width="300"
+        />
+      </div>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/danishtjo" target="_blank">
+          <i class="fab fa-linkedin"> </i>
+        </a>
+        <a href="https://wa.me/08999131114" target="_blank">
+          <i class="fab fa-whatsapp"> </i>
+        </a>
+        <a href="mailto:paoonish@gmail.com" target="_blank">
+          <i class="fas fa-envelope-open-text"> </i>
+        </a>
+      </div>
+    </section>
+    <section class="work-process">
+      <div class="container">
+        <h2>Work Process</h2>
+        <div class="steps">
+          <div class="step">
+            <img
+              alt="Step 1"
+              height="150"
+              src="pre-production-art.jpg"
+              width="200"
+            />
+            <h3>1. Pre-Production (As an Assistant Producer)</h3>
+            <p>
+              Collaborate with the producer and creative team to brainstorm
+              ideas the show's content.
+            </p>
+          </div>
+          <div class="step">
+            <img alt="Step 2" height="130" src="Production.jpg" width="200" />
+            <h3>2. Production (As an Assistant Producer)</h3>
+            <p>
+              Support the producer in managing the daily activities, ensuring
+              that Production stays on schedule.
+            </p>
+          </div>
+          <div class="step">
+            <img
+              alt="Step 3"
+              height="150"
+              src="Post Production.jpg"
+              width="200"
+            />
+            <h3>
+              3. Post-Production (As an Assistant Producer and Video Editor)
+            </h3>
+            <p>
+              Review all raw footage and organize it according to the script and
+              production plan. Refine the edit by syncing visuals with
+              voice-over, sound effects, and music. Apply color correction,
+              transitions, and effects as needed.
+            </p>
+          </div>
+          <div class="step">
+            <img alt="Step 4" height="150" src="Final Review.jpg" width="200" />
+            <h3>4. Final Review & Delivery (As an Assistant Producer)</h3>
+            <p>
+              Conduct a final review of the edited program, ensuring there are
+              no technical or content issues before broadcast. Deliver the
+              polished final cut, ensuring it meets broadcast standards and
+              complies with regulatory guidelines (e.g., KBBI and KPI).
+            </p>
+          </div>
+          <div class="step">
+            <img
+              alt="Step 5"
+              height="150"
+              src="pOST Broadcast.jpg"
+              width="200"
+            />
+            <h3>5. Post-Broadcast (As an Assistant Producer)</h3>
+            <p>
+              Analyze the program’s performance using audience ratings (e.g.,
+              NIELSEN data) to assess how well the content resonated with
+              viewers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="projects">
+          <div class="project">
+            <video width="320" height="240" controls muted>
+              <source src="Preview for TopSpot Press.mp4" type="video/mp4" />
+              <source src="Preview for TopSpot Press.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Project TV Station'Top Spot'</h3>
+            <p>
+              Top Spot is a news magazine program on NET TV, where I work as an
+              Assistant Producer and Editor. The show presents both local and
+              international news in a light, entertaining format. As an
+              Assistant Producer, my role is to maintain and enhance the
+              program’s quality, ensuring the content delivering high-quality
+              information while also crafting an appealing presentation that
+              keeps the audience engaged.
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/1VU_m3PTzAra8tVeGbe-1pQ6vq2ejdwC3?usp=sharing"
+              target="_blank"
+              title="Go To The Top Spot Project"
+              ><button class="linkeu">Explore The Project</button>
+            </a>
+          </div>
+          <div class="project">
+            <video width="320" height="240" controls muted>
+              <source src="Preview For SH Press.mp4" type="video/mp4" />
+              <source src="Preview For SH Press.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Project TV Station 'Selebrita Heits'</h3>
+            <p class="flex1">
+              Selebrita Heits, a program on Trans 7, is an infotainment show
+              that reveals fascinating facts surrounding mysteries, celebrity
+              lives, and life-shaking tragedies. Editors are tasked with
+              capturing the essence of infotainment, ensuring each episode is
+              crafted to captivate viewers.
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/12CPw_bqhVmG_HWaOjEQYyQOvox6cpmJF?usp=sharing"
+              target="_blank"
+              title="Go To The Selebrita Heits Project"
+              ><button class="linkeu">Explore The Project</button>
+            </a>
+          </div>
+          <div class="project">
+            <video width="320" height="240" controls muted>
+              <source src="Preview For Dbm Press.mp4" type="video/mp4" />
+              <source src="Preview For Dbm Press.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <div>
+              <h3 class="flex1">Project TV Station 'Di Balik Mitos'</h3>
+            </div>
+            <p class="flex1">
+              The program "Di Balik Mitos" on NET TV explores both local and
+              international stories surrounding myths that exist within society.
+              Through in-depth reporting, the show uncovers the truth behind
+              widely believed superstitions and taboo subjects, shedding light
+              on the reality behind these long-held beliefs.Editors are tasked
+              with creating a tense and gripping atmosphere that keeps viewers
+              engaged and eager to uncover the reality behind these mysterious
+              beliefs.
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/1HkBJnAxXlPqYLaAMNlWc4bv1qAUmkWXO?usp=sharing"
+              target="_blank"
+              title="Go To The Di Balik Mitos Project"
+              ><button class="linkeu">Explore The Project</button>
+            </a>
+          </div>
+          <div class="project">
+            <video width="320" height="240" controls muted>
+              <source src="Preview For Garage+62 press.mp4" type="video/mp4" />
+              <source src="Preview For Garage+62 press.mp4" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="flex1">
+              <h3 class="flex1">Project Garage +62</h3>
+            </div>
+            <p class="flex1">
+              My older brother, the owner of Garage +62, asked me to edit
+              content for the workshop’s Instagram page. He wanted clear and
+              informative videos about the motorcycles to engage potential
+              customers and showcase the services offered. My goal was to create
+              content that effectively communicates the workshop’s expertise
+              while capturing the interest of its audience.
+            </p>
+            <a
+              href="https://www.instagram.com/reel/C0AuE2LpSV_/?igsh=MTZocnpycDJzbGE2cw%3D%3D"
+              target="_blank"
+              title="Go To The Garage +62 Project"
+              ><button class="linkeu">Explore The Project</button>
+            </a>
+          </div>
+          <div class="project">
+            <video width="320" height="240" controls muted>
+              <source src="Preview For YT press.mp4" type="video/mp4" />
+              <source src="Preview For YT press.mp4" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <div>
+              <h3 class="flex1">Project Youtube</h3>
+            </div>
+            <p class="flex1">
+              A friend of mine, who is the editor for the YouTube channel Bang
+              Abdi TV, asked me to help edit a promotional video for Instagram.
+              The video was created to promote an upcoming upload on the
+              channel, and my role was to ensure it was engaging and optimized
+              for the platform, capturing the attention of the audience and
+              driving traffic to the YouTube video.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1mFGK-IwHNGeuERlKfMuRo3aYuIYok-R-/view?usp=sharing"
+              target="_blank"
+              title="Go To The Youtube Project"
+              ><button class="linkeu">Explore The Project</button>
+            </a>
+          </div>
+          <div class="project">
+            <video width="320" height="240" controls muted>
+              <source
+                src="Preview For Liem Project Press.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="Preview For Liem Project Press.ogg"
+                type="video/ogg"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <div>
+              <h3 class="flex1">Project for Academic Purpose</h3>
+            </div>
+            <p class="flex1">
+              This project was done for a friend pursuing his Master’s in
+              Business at a prestigious university in Jakarta. He approached me
+              to edit a video as part of their coursework, which involved
+              syncing voice-overs, creating mockups, and conducting interviews.
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/1MAdWQXAjoA2QGZ4ivOhqxdeeGjTDUw7-?usp=sharing"
+              target="_blank"
+              title="Go To The Academic Project"
+              ><button class="linkeu">Explore The Project</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
